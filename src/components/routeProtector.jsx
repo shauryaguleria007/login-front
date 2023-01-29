@@ -23,5 +23,5 @@ export const RouteProtector = ({ children }) => {
         <div className='formItem'>Loading...</div>
       </div>
     )
-  if (selector?.email !== null) return children
+  if (selector?.email !== null && data?.user != null) return children
 }
