@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 const userApi = createApi({
   reducerPath: 'userApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: `https://react-login-6gva.onrender.com/api/v1/`,
+    baseUrl: `https://localhost:3443/api/v1/`,
     withCredentials: true,
     credentials: 'include',
   }),
