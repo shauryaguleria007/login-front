@@ -6,12 +6,6 @@ const userApi = createApi({
     baseUrl: `https://react-login-c7xl.onrender.com/api/v1/`,
     withCredentials: true,
     credentials: 'same-origin',
-    prepareHeaders: (headers, { getState }) => {
-      headers.set('Content-Type', 'application/json')
-      headers.set('Accept', 'application/json')
-
-      return headers
-    },
   }),
   endpoints: (builder) => ({
     getUser: builder.query({
