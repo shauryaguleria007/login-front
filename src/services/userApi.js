@@ -7,7 +7,9 @@ const userApi = createApi({
     withCredentials: true,
     credentials: 'same-origin',
     prepareHeaders: (headers, { getState }) => {
-      headers.set('Content-Type', 'application/json; charset=utf-8')
+      headers.set('Content-Type', 'application/json')
+      headers.set('Accept', 'application/json')
+
       return headers
     },
   }),
