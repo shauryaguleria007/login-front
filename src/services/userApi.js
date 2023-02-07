@@ -5,7 +5,7 @@ const userApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: `https://react-login-c7xl.onrender.com/api/v1/`,
     withCredentials: true,
-    credentials: 'include',
+    credentials: 'same-origin',
     prepareHeaders: (headers, { getState }) => {
       headers.set('Content-Type', 'application/json; charset=utf-8')
       return headers
