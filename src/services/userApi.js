@@ -5,7 +5,7 @@ const userApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: `https://react-login-c7xl.onrender.com/api/v1/`,
     withCredentials: true,
-    credentials: 'same-origin',
+    credentials: 'include',
   }),
   endpoints: (builder) => ({
     getUser: builder.query({
